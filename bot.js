@@ -343,6 +343,9 @@ client.on('interactionCreate', async (interaction) => {
     await interaction.editReply({ embeds: [embed] });
   }
 });
+require('http')
+    .createServer((req, res) => res.end('Bot läuft'))
+    .listen(process.env.PORT || 3000);
 
 // ── START ────────────────────────────────────────────────
 client.login(CONFIG.token).catch(err => {
