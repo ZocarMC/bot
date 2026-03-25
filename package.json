@@ -1,0 +1,18 @@
+{
+  "name": "master-tiers-bot",
+  "version": "1.0.0",
+  "description": "Discord Bot für Master Tiers – deanmaster.mooo.com",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^1.14.0",
+    "discord.js": "^14.25.1"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
