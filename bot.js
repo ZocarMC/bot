@@ -12,10 +12,10 @@ const path = require('path');
 
 // ── CONFIG ────────────────────────────────────────────────
 const CONFIG = {
-  token:      process.env.BOT_TOKEN   || 'Your_Bot_Token',
-  clientId:   process.env.CLIENT_ID   || 'Your_Client_ID',
-  guildId:    process.env.GUILD_ID    || 'Your_Guild_ID',
-  allowedRoleIds: (process.env.ALLOWED_ROLES || 'Role_ID_1').split(',Role_ID_2').filter(Boolean),
+  token:      process.env.BOT_TOKEN   || 'BOT_TOKEN',
+  clientId:   process.env.CLIENT_ID   || 'CLIENT_ID',
+  guildId:    process.env.GUILD_ID    || 'GUILD_ID',
+      allowedRoleIds: (process.env.ALLOWED_ROLES || '').split(',').filter(Boolean),
   dataFile:   path.join(__dirname, 'tierdata.json'),
 };
 
